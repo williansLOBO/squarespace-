@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090b">
+  <meta name="description" content="Uma experiência digital elegante para criar e lançar seu próximo site.">
+  <title>Forma — Seu próximo site começa aqui</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="navbar" id="top">
+      <a class="brand" href="#top" aria-label="Forma início"><span class="brand-mark">◒</span> FORMA</a>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#templates">Modelos <i data-lucide="chevron-down"></i></a>
+        <a href="#features">Soluções <i data-lucide="chevron-down"></i></a>
+        <a href="#stories">Inspiração <i data-lucide="chevron-down"></i></a>
+      </nav>
+      <div class="nav-actions">
+        <a class="login-link" href="#footer">Entrar</a>
+        <a class="button button-light button-small" href="#start">Começar</a>
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <div class="mobile-menu" aria-hidden="true">
+      <a href="#templates">Modelos</a><a href="#features">Soluções</a><a href="#stories">Inspiração</a><a href="#start">Começar agora</a>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="hero-image" role="img" aria-label="Dançarina em movimento em um estúdio escuro"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">LIBERTE SUAS IDEIAS</p>
+          <h1>Seu site.<br><em>Do seu jeito.</em></h1>
+          <p>Uma presença digital que transforma boas ideias em grandes histórias.</p>
+          <a class="button button-light" href="#start">Criar meu site <i data-lucide="arrow-up-right"></i></a>
+        </div>
+        <div class="hero-bottom">
+          <span>DESIGN QUE FAZ ACONTECER</span>
+          <span>ROLE PARA EXPLORAR <i data-lucide="arrow-down"></i></span>
+        </div>
+      </section>
+
+      <section class="intro section-dark">
+        <div class="intro-art">
+          <div class="intro-card card-back"><span>ESTÚDIO CRIATIVO</span><img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=85" alt="Instalação artística contemporânea"></div>
+          <div class="intro-card card-main"><div class="card-top"><span>PORTFÓLIO / 2026</span><span>01 — 04</span></div><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=90" alt="Interior minimalista com design sofisticado"><strong>Essencial<span>.</span></strong></div>
+          <div class="intro-card card-side"><span>DESIGN<br>INDEPENDENTE</span><img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=85" alt="Composição editorial de objetos"></div>
+        </div>
+        <div class="stats">
+          <div><strong>14M+</strong><span>IDEIAS COLOCADAS NO MUNDO</span></div>
+          <div><strong>$36B+</strong><span>EM NEGÓCIOS CRIADOS</span></div>
+        </div>
+      </section>
+
+      <section class="templates section-light" id="templates">
+        <div class="section-heading centered">
+          <p class="eyebrow dark-eyebrow">UM BOM COMEÇO</p>
+          <h2>Faça sua ideia ganhar forma.</h2>
+          <p>Escolha um ponto de partida. Personalize cada detalhe e crie algo que tenha a sua identidade.</p>
+        </div>
+        <div class="template-track">
+          <article class="template-card template-small">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=850&q=85" alt="Fotografia editorial de moda">
+            <span>01 / MODA</span><h3>Vista sua marca.</h3>
+          </article>
+          <article class="template-card template-large">
+            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1400&q=90" alt="Joias em composição minimalista">
+            <span>02 / E-COMMERCE</span><h3>Venda com personalidade.</h3>
+          </article>
+          <article class="template-card template-small">
+            <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=850&q=85" alt="Ambiente de arquitetura contemporânea">
+            <span>03 / PORTFÓLIO</span><h3>Mostre seu trabalho.</h3>
+          </article>
+        </div>
+        <div class="slider-dots"><span class="active"></span><span></span><span></span></div>
+      </section>
+
+      <section class="features section-light" id="features">
+        <div class="feature-heading">
+          <div><p class="eyebrow dark-eyebrow">TUDO EM UM SÓ LUGAR</p><h2>Seu universo.<br>Uma plataforma.</h2></div>
+          <p>Ferramentas intuitivas para você construir, administrar e expandir sua presença online — sem complicação.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="feature-visual editor"><div class="editor-window"><div class="window-bar"><i></i><i></i><i></i></div><div class="editor-content"><div class="editor-photo"></div><div class="editor-lines"><b></b><i></i><i></i></div></div><span class="floating-tag">Seu design, suas regras</span></div></div><h3>Editor de sites</h3><p>Liberdade criativa com ferramentas simples e flexíveis.</p><i data-lucide="arrow-up-right"></i></article>
+          <article class="feature-card"><div class="feature-visual ai"><span class="ai-orb">✳</span><span class="ai-caption">IDEIAS EM MOVIMENTO</span></div><h3>Inteligência criativa</h3><p>Comece mais rápido com recursos que ajudam a tirar ideias do papel.</p><i data-lucide="arrow-up-right"></i></article>
+          <article class="feature-card"><div class="feature-visual mail"><div class="mail-icon">M</div><span>Seu negócio conectado</span></div><h3>E-mail profissional</h3><p>Uma comunicação consistente para sua marca.</p><i data-lucide="arrow-up-right"></i></article>
+          <article class="feature-card"><div class="feature-visual domain"><div class="domain-pill"><i data-lucide="globe"></i> suamarca.com</div><div class="domain-glow"></div></div><h3>Domínios</h3><p>Encontre um endereço simples, memorável e seu.</p><i data-lucide="arrow-up-right"></i></article>
+        </div>
+      </section>
+
+      <section class="ai-section section-dark">
+        <div class="ai-bg"></div>
+        <div class="section-heading centered">
+          <p class="eyebrow">CRIAR PODE SER MAIS SIMPLES</p>
+          <h2>O próximo passo começa<br>com uma ideia.</h2>
+          <p>Use ferramentas inteligentes para explorar possibilidades e encontrar sua direção.</p>
+        </div>
+        <div class="ai-panels">
+          <article class="ai-panel"><div class="panel-label"><span class="mini-mark">✳</span> FORMA AI</div><div class="prompt-lines"><i></i><i></i><i></i></div><div class="panel-foot"><span>Transforme sua ideia em um começo.</span><b>Explorar <i data-lucide="arrow-up-right"></i></b></div></article>
+          <article class="ai-panel ai-panel-image"><div class="panel-label">INSPIRAÇÃO VISUAL</div><div class="mini-gallery"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=400&q=80" alt="Escritório criativo"><img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=400&q=80" alt="Detalhes de design"><img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=400&q=80" alt="Composição minimalista"></div><div class="panel-foot"><span>Descubra novas referências.</span><b>Ver ideias <i data-lucide="arrow-up-right"></i></b></div></article>
+        </div>
+        <p class="tiny-note">FERRAMENTAS PARA CRIAR COM MAIS CONFIANÇA.</p>
+      </section>
+
+      <section class="domain-section section-dark">
+        <p class="eyebrow">O NOME DA SUA PRÓXIMA IDEIA</p>
+        <h2>Encontre o domínio<br>perfeito para você.</h2>
+        <form class="domain-search"><label class="sr-only" for="domain">Pesquise um domínio</label><i data-lucide="search"></i><input id="domain" type="text" placeholder="Pesquise seu novo domínio"><button aria-label="Pesquisar"><i data-lucide="arrow-right"></i></button></form>
+        <p class="domain-hint">Sua marca merece um endereço à altura.</p>
+      </section>
+
+      <section class="community section-dark" id="stories">
+        <div class="avatar-stack"><span>J</span><span>M</span><span>A</span><span>R</span><span>L</span></div>
+        <h2>Feito para quem<br>faz acontecer.</h2>
+        <p>Uma comunidade de pessoas que estão construindo o que vem a seguir.</p>
+        <div class="community-gallery">
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=700&q=85" alt="Estúdio de trabalho criativo">
+          <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=85" alt="Objetos de design">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=85" alt="Espaço de trabalho">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=85" alt="Interior contemporâneo">
+          <div class="made-card">Made with<br><strong>FORMA.</strong></div>
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=700&q=85" alt="Editorial de moda">
+        </div>
+      </section>
+
+      <section class="faq section-dark">
+        <details><summary>Como criar meu primeiro site? <i data-lucide="plus"></i></summary><p>Escolha um modelo, personalize textos e imagens e publique quando estiver pronto.</p></details>
+        <details><summary>Preciso saber programar? <i data-lucide="plus"></i></summary><p>Não. A experiência foi pensada para que você consiga criar visualmente, sem escrever código.</p></details>
+        <details><summary>Posso usar meu próprio domínio? <i data-lucide="plus"></i></summary><p>Sim. Você pode conectar um domínio que já possui ou pesquisar um novo endereço.</p></details>
+      </section>
+
+      <section class="final-cta section-dark" id="start">
+        <div class="cta-grain"></div>
+        <p class="eyebrow">SEU PRÓXIMO CAPÍTULO</p>
+        <h2>Comece a criar<br>hoje mesmo.</h2>
+        <p>Uma ideia pode ser o começo de tudo.</p>
+        <a class="button button-light" href="mailto:oi@forma.example">Começar agora <i data-lucide="arrow-up-right"></i></a>
+      </section>
+    </main>
+
+    <footer class="footer section-dark" id="footer">
+      <div class="footer-top"><a class="brand" href="#top"><span class="brand-mark">◒</span> FORMA</a><p>Um site é o começo<br>de algo maior.</p><a class="back-top" href="#top">VOLTAR AO TOPO ↑</a></div>
+      <div class="footer-links"><div><b>CRIAR</b><a href="#templates">Modelos</a><a href="#features">Recursos</a><a href="#start">Começar</a></div><div><b>EXPLORAR</b><a href="#stories">Inspiração</a><a href="#features">Plataforma</a><a href="#faq">Perguntas</a></div><div><b>ACOMPANHE</b><a href="#footer">Instagram</a><a href="#footer">Pinterest</a><a href="#footer">YouTube</a></div><div><b>INFORMAÇÕES</b><a href="#footer">Sobre</a><a href="#footer">Contato</a><a href="#footer">Privacidade</a></div></div>
+      <div class="footer-bottom"><span>© 2026 FORMA STUDIO</span><span>FEITO PARA IDEIAS EM MOVIMENTO.</span><span>PORTUGUÊS (BR)</span></div>
+    </footer>
+  </div>
+</body>
+</html>
